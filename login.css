@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Sani-color: #4891ff;
+    --Usman-color:  #f4f4f6;
+    --Egede-color: #111;
+    --button: #f5f5f5;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: rgb(235, 233, 233);
+}
+
+form {
+    background-color: var(--button);
+    max-width: 800px;
+    margin: 30px auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    animation: form 2s;
+    animation-timing-function: ease-in-out;
+}
+
+form h2 {
+    background-color: var(--button);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 20px;
+
+    animation: register 1.5s;
+    position: relative;
+}
+
+
+form input {
+    display: block;
+    width: 70%;
+    padding: 10px 40px;
+    margin: 10px auto;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.713);
+    color: #000;
+    
+}
+
+form i {
+    position: relative;
+    top: -40px;
+    left: 125px;
+    margin: auto;
+    padding: 0px;
+    opacity: 40%;
+    
+}
+
+form button {
+    background-color: #4891ff;
+    color: white;
+    padding: 6px;
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: large;
+    opacity: 0%;
+
+    animation: button 4s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+
+form button:hover {
+    opacity: 80%;
+}
+
+form button:active {
+    opacity: 50%;
+    color: black;
+}
+
+
+@keyframes button {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes form {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/* navbar styling starts here  */
+.navbar {
+    background-color: white;
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    animation-name: navbar;
+    animation-duration: 2s;
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-weight:600;
+    cursor: pointer;
+}
+
+.navbar .logo img {
+    width: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+.navbar ul li {
+    margin: 18px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+
+    transition-property: all;
+    transition-duration: .5s;
+
+}
+
+.navbar ul li .nav:hover {
+    background-color: var(--button);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.navbar ul li .login .fa-solid {
+    color: #000;
+    margin-right: 8px;
+}
+
+.navbar ul li .login {
+    background-color: var(--button);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all;
+    transition-duration: 1s;
+}
+
+.navbar ul li .login:hover {
+    background: var(--Sani-color);
+}
+
+.navbar li .login:active {
+    opacity: 50%;
+    color: red;
+}
+/* navbar styling ends here  */
